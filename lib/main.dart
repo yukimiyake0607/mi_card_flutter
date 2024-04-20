@@ -13,34 +13,20 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
             children: [
-              Container(
-                width: 100,
-                height: double.infinity,
-                color: Colors.red,
+              CircleAvatar(
+                radius: 50,
+                backgroundColor: Colors.red,
+                backgroundImage: AssetImage('images/Yuki_miyake.JPG'),
               ),
-              Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.yellow,
-                  ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.green,
-                  ),
-                ],
-              ),
-              Container(
-                width: 100,
-                height: double.infinity,
-                color: Colors.blue,
+              Text(
+                'Yuki Miyake',
+                style: TextStyle(
+                  fontSize: 50,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
             ],
           ),
